@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevin Murdock — 25 Years Building What Didn't Exist Yet</title>
+<meta name="description" content="Kevin S. Murdock has founded 25+ companies across diagnostics, manufacturing, distribution, software, and AI &mdash; from Premier Medical Laboratory Services and Diversified Medical Healthcare to today's AI-powered healthcare platforms.">
+<link rel="canonical" href="https://kevinsmurdock.com">
+<meta property="og:title" content="Kevin Murdock — 25 Years Building What Didn't Exist Yet">
+<meta property="og:description" content="From the first FDA-validated SC COVID lab to AI operating systems for 5M medical reps. 25+ companies. One builder.">
+<meta property="og:url" content="https://kevinsmurdock.com">
+<meta property="og:type" content="profile">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0d1b2a;--navy2:#1b2d42;--gold:#c49a2e;--gold2:#e0b84a;--cream:#f7f3ec;--white:#fff;--gray:#6b7280;--lightgray:#e8e4dd;--ink:#1a1a1a;--border:rgba(196,154,46,.25);--accent:#00d4aa;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,27,42,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(196,154,46,.3);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:56px;}
+.nav-brand{font-family:'Libre Baskerville',serif;font-size:15px;font-weight:700;color:var(--white);text-decoration:none;}
+.nav-brand span{color:var(--gold2);}
+.nav-cta{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:7px 16px;border:1px solid var(--gold);color:var(--gold2);text-decoration:none;transition:all .2s;}
+.nav-cta:hover{background:var(--gold);color:var(--navy);}
+.hero{min-height:100vh;background:var(--navy);display:flex;align-items:center;padding:80px 40px 60px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(0,212,170,.08),transparent 60%),radial-gradient(ellipse 40% 60% at 20% 80%,rgba(196,154,46,.05),transparent 50%);}
+.hero-inner{max-width:1000px;margin:0 auto;width:100%;position:relative;z-index:1;}
+.hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:flex;align-items:center;gap:10px;}
+.hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--gold);}
+h1{font-family:'Libre Baskerville',serif;font-size:clamp(40px,6vw,68px);font-weight:700;color:var(--white);line-height:1.05;margin-bottom:14px;}
+h1 .n{color:var(--accent);font-style:italic;}
+.hero-sub{font-size:16px;color:rgba(255,255,255,.65);max-width:640px;margin-bottom:32px;line-height:1.8;}
+.btn-primary{display:inline-block;padding:15px 36px;background:var(--gold);color:var(--navy);font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;text-decoration:none;transition:background .2s;}
+.btn-primary:hover{background:var(--gold2);}
+section{padding:80px 40px;}
+.si{max-width:1000px;margin:0 auto;}
+.sl{font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.sl::before{content:'';width:20px;height:1px;background:var(--gold);}
+h2{font-family:'Libre Baskerville',serif;font-size:clamp(28px,3.5vw,40px);font-weight:700;color:var(--ink);line-height:1.15;margin-bottom:14px;}
+h2.lt{color:var(--white);}
+.intro{font-size:15px;color:var(--gray);max-width:700px;line-height:1.8;margin-bottom:44px;}
+.intro.lt{color:rgba(255,255,255,.55);}
+#philosophy{background:var(--white);}
+.phil-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.phil-body p{font-size:16px;color:#333;line-height:1.9;margin-bottom:18px;}
+.phil-body p:first-letter{font-family:'Libre Baskerville',serif;font-size:54px;float:left;line-height:.9;margin:4px 10px 0 0;color:var(--gold);}
+.phil-card{background:var(--navy);border-left:4px solid var(--accent);padding:28px;}
+.phil-card h3{color:var(--gold2);font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px;}
+.phil-card blockquote{font-family:'Libre Baskerville',serif;font-size:20px;font-style:italic;color:var(--white);line-height:1.6;margin-bottom:14px;}
+.phil-card cite{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.5);font-style:normal;}
+#companies{background:var(--navy2);}
+.co-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;}
+.co-card{background:rgba(255,255,255,.04);border:1px solid rgba(196,154,46,.15);padding:28px;transition:all .2s;}
+.co-card:hover{background:rgba(0,212,170,.05);border-color:var(--accent);}
+.co-era{display:inline-block;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;background:rgba(0,212,170,.15);color:var(--accent);margin-bottom:14px;}
+.co-card.ph .co-era{background:rgba(196,154,46,.15);color:var(--gold2);}
+.co-name{font-family:'Libre Baskerville',serif;font-size:22px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.co-tag{font-size:13px;color:var(--accent);font-weight:600;margin-bottom:12px;}
+.co-body{font-size:13px;color:rgba(255,255,255,.55);line-height:1.7;}
+#stack{background:var(--cream);}
+.stack-list{list-style:none;padding:0;}
+.stack-list li{display:flex;gap:20px;padding:20px 0;border-bottom:1px solid var(--lightgray);align-items:flex-start;}
+.stack-list li:last-child{border-bottom:none;}
+.stack-n{font-family:'Libre Baskerville',serif;font-size:32px;font-weight:700;color:var(--gold);min-width:60px;line-height:1;}
+.stack-t{font-family:'Libre Baskerville',serif;font-size:17px;font-weight:700;color:var(--ink);margin-bottom:4px;}
+.stack-b{font-size:14px;color:#555;line-height:1.7;}
+#cta-bottom{background:var(--navy);text-align:center;padding:80px 40px;}
+#cta-bottom h2{color:var(--white);margin-bottom:14px;}
+#cta-bottom p{font-size:15px;color:rgba(255,255,255,.55);margin-bottom:28px;}
+footer{background:rgba(0,0,0,.3);border-top:1px solid rgba(196,154,46,.15);padding:28px 40px;text-align:center;color:rgba(255,255,255,.35);font-size:12px;}
+footer a{color:var(--gold2);text-decoration:none;}
+@media(max-width:768px){nav{padding:0 16px;}.hero{padding:72px 16px 48px;}section{padding:56px 16px;}.phil-grid,.co-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://kevinsmurdock.com" class="nav-brand">Kevin S. <span>Murdock</span></a>
+  <a href="https://kevinsmurdock.com" class="nav-cta">Full Bio &rarr;</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Entrepreneur &middot; Builder &middot; Greenville, SC</div>
+    <h1>25 Years Building<br>What <span class="n">Didn't Exist Yet.</span></h1>
+    <p class="hero-sub">Kevin S. Murdock has founded 25+ companies across diagnostics, manufacturing, distribution, software, and AI &mdash; from the first FDA-validated COVID testing lab in South Carolina to an AI operating system serving 5 million independent medical reps nationwide.</p>
+    <a href="https://kevinsmurdock.com" class="btn-primary">Full Story &rarr;</a>
+  </div>
+</section>
+
+<section id="philosophy">
+  <div class="si">
+    <div class="sl">Builder Philosophy</div>
+    <h2>Build the Thing That Needs to Exist.</h2>
+    <p class="intro">Every company Kevin has founded solves a problem that someone else said couldn't be solved, shouldn't be built, or wasn't worth doing. He built them anyway.</p>
+    <div class="phil-grid">
+      <div class="phil-body">
+        <p>When COVID hit and no commercial lab in South Carolina was FDA-validated to run tests, we built that lab &mdash; in weeks, not months. When every pathology group was selling reps access to 50,000-name lists but nobody was giving them a platform to actually close deals, we built one. When AI voice agents were toys, we built production-grade ones for real healthcare workflows.</p>
+        <p>The pattern is the same every time: find the workflow that's broken, pay attention to the people doing the work, then build the thing that should exist &mdash; infrastructure first, polish last. Ship fast. Fix it live. Listen more than you sell.</p>
+        <p>Twenty-five years, five states, 450 employees at the peak, 25+ companies. One builder.</p>
+      </div>
+      <div class="phil-card">
+        <h3>Operating Principle</h3>
+        <blockquote>Infrastructure first, polish last. Ship in weeks. Fix it live. Pay attention to the people doing the work &mdash; they tell you what to build next.</blockquote>
+        <cite>&mdash; Kevin S. Murdock</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="companies">
+  <div class="si">
+    <div class="sl">Current Portfolio</div>
+    <h2 class="lt">What's Being Built Right Now</h2>
+    <p class="intro lt">Today's focus: AI-powered healthcare platforms built in Greenville, SC &mdash; serving medical professionals, diagnostic labs, and patients across the country.</p>
+    <div class="co-grid">
+      <div class="co-card">
+        <div class="co-era">Current Focus</div>
+        <div class="co-name">AI Operating Systems for Medical Reps</div>
+        <div class="co-tag">5M independent medical reps nationwide</div>
+        <div class="co-body">The first complete AI operating system for independent medical reps &mdash; scored NPI records, AI-generated pre-call briefings, calendar-aware power dialer, post-call SMS debrief, cross-account sync. Live and serving reps today.</div>
+      </div>
+      <div class="co-card">
+        <div class="co-era">Current Focus</div>
+        <div class="co-name">Next-Generation Diagnostics</div>
+        <div class="co-tag">Single-draw cancer detection panels</div>
+        <div class="co-body">CLIA-certified diagnostic workflows targeting early detection across primary care, oncology, and wound care. Single-draw panels, Medicare-reimbursable, built on 15 years of clinical laboratory experience.</div>
+      </div>
+      <div class="co-card">
+        <div class="co-era">Current Focus</div>
+        <div class="co-name">AI Voice Agents for Healthcare</div>
+        <div class="co-tag">Production-grade clinical conversations</div>
+        <div class="co-body">Purpose-built AI voice agents for medical practices &mdash; appointment booking, pre-visit intake, follow-up calls, and after-hours triage. Not a chatbot-in-a-trench-coat. Engineered for real clinical conversations.</div>
+      </div>
+      <div class="co-card">
+        <div class="co-era">Current Focus</div>
+        <div class="co-name">Faith-Based AI</div>
+        <div class="co-tag">Serving thousands of active users</div>
+        <div class="co-body">An AI platform built for study, reflection, and sermon prep. Thousands of active users. Proof that AI can serve more than commerce &mdash; it can serve the deeper questions too.</div>
+      </div>
+      <div class="co-card ph">
+        <div class="co-era">2007&ndash;2023</div>
+        <div class="co-name">Premier Medical Laboratory Services</div>
+        <div class="co-tag">First FDA-validated SC COVID lab</div>
+        <div class="co-body">15 years of diagnostics leadership. Up to 300,000 tests/day with pooling. Yale SalivaDirect designated. DiabetesPredict exclusive US provider. Praised by US Senator Lindsey Graham as one of the largest variant labs in America.</div>
+      </div>
+      <div class="co-card ph">
+        <div class="co-era">Holding &middot; 5 States</div>
+        <div class="co-name">Diversified Medical Healthcare</div>
+        <div class="co-tag">Multi-state laboratory and manufacturing group</div>
+        <div class="co-body">5 laboratories across SC, NC, TX, UT, FL. 450 employees at peak. $51M SC capital investment creating 185 new jobs. Endorsed by the SC Governor's office (2022).</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="si">
+    <div class="sl">Builder's Stack</div>
+    <h2>Five Things That Haven't Changed in 25 Years</h2>
+    <ol class="stack-list">
+      <li>
+        <span class="stack-n">01</span>
+        <div><div class="stack-t">Build in Greenville, SC.</div><div class="stack-b">Every company. Every team. Every hire. There are great people here &mdash; and better quality of life than any coastal hub offers. No plans to move.</div></div>
+      </li>
+      <li>
+        <span class="stack-n">02</span>
+        <div><div class="stack-t">Infrastructure first, polish last.</div><div class="stack-b">Working code beats a pretty pitch deck. Ship the lab that runs PCR before the lobby gets marble. Ship the rep dashboard before it has perfect animations.</div></div>
+      </li>
+      <li>
+        <span class="stack-n">03</span>
+        <div><div class="stack-t">Pay attention to the people doing the work.</div><div class="stack-b">Reps know what reps need. PhD scientists know what the lab needs. The boss doesn't invent product &mdash; the boss clears the path so the team can.</div></div>
+      </li>
+      <li>
+        <span class="stack-n">04</span>
+        <div><div class="stack-t">Share the upside.</div><div class="stack-b">Q3 2020 profit share to all 450 employees during the pandemic. Not a PR stunt &mdash; an operating principle. When the company wins, everyone wins.</div></div>
+      </li>
+      <li>
+        <span class="stack-n">05</span>
+        <div><div class="stack-t">Show up when it counts.</div><div class="stack-b">Free tests for every SC first responder. Thousands of N95s donated. Hiring laid-off workers mid-pandemic. You don't get called a "valuable partner for South Carolina" by a US Senator for a press release &mdash; you get there by showing up.</div></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="cta-bottom">
+  <div class="si">
+    <h2 class="lt">See the Full Journey at Kevinsmurdock.com</h2>
+    <p>Press archive. Senator quotes. Attorney statement. Complete venture history &mdash; 1992 to today.</p>
+    <a href="https://kevinsmurdock.com" class="btn-primary">Full Story &rarr;</a>
+  </div>
+</section>
+
+<footer>
+  Kevin S. Murdock &middot; Greenville, South Carolina &middot; <a href="https://kevinsmurdock.com">kevinsmurdock.com</a>
+</footer>
+
+</body>
+</html>
